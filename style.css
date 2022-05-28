@@ -112,8 +112,8 @@ justify-content: center;
 .zero-shape {
     border: 5px solid black;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 80%;
+    height: 80%;
     margin: auto;
     position: relative;
     top: 12px;
@@ -122,7 +122,7 @@ justify-content: center;
 
 .cross-shape {
 
-    height: 160px;
+    height: 95%;
     width: 5px;
     background-color: black;
     margin: auto;
