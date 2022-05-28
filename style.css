@@ -1,0 +1,164 @@
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container-size {
+    flex: 0 0 30%;
+    width: 500px;
+    height: 500px;
+    padding: 16px;
+
+
+}
+
+.flex-5{
+flex: 0 0 5%;
+}
+
+
+
+.winner-annocement {
+
+    background-color: rgb(98, 240, 157);
+
+    color: white;
+
+    font-size: 24px;
+
+    animation: font-animination 4s infinite;
+
+    transition: ease-in;
+}
+
+
+@keyframes font-animination {
+
+
+    0% {
+        font-size: 32px;
+    }
+
+    50% {
+        font-size: 18px;
+    }
+
+    100% {
+        font-size: 32px;
+    }
+
+
+}
+
+
+.first-off {
+    flex: 0 0 30%;
+    height: 500px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.secound-off {
+    flex: 0 0 30%;
+    height: 100%;
+    align-items: center;
+display: flex;
+justify-content: center;
+}
+
+
+.column-size {
+    width: 30%;
+
+    display: inline-block;
+    height: 100%;
+}
+
+.column-size:not(:last-child) {
+    border-right: 5px solid #253454;
+}
+
+.cell-box,
+.cell-box-1,
+.cell-box-2 {
+    height: 33%;
+    width: 100%;
+
+}
+
+.cell-box:not(:last-child),
+.cell-box-1:not(:last-child),
+.cell-box-2:not(:last-child) {
+
+    border-bottom: 5px solid #253454;
+}
+
+
+/* .center-cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.zero-shape {
+    border: 5px solid black;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    position: relative;
+    top: 12px;
+
+}
+
+.cross-shape {
+
+    height: 160px;
+    width: 5px;
+    background-color: black;
+    margin: auto;
+    transform: rotateZ(140deg);
+}
+
+.cross-shape::before {
+    content: '';
+    height: 160px;
+    width: 5px;
+    background-color: black;
+    margin: auto;
+    transform: rotateZ(265deg);
+    display: block;
+}
+
+.disable {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+button{
+    padding: 6px 20px;
+color: #fff;
+background: tomato;
+}
+footer{
+    padding: 16px;
+}
+footer>div{
+    padding: 16px;
+    background-color: rgb(92, 186, 240);
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
